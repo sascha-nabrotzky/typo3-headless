@@ -6,3 +6,4 @@ nbproject
 /vendor/*
 /public/index.php
 /public/typo3
+/public/fileadmin/*
