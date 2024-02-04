@@ -1,0 +1,18 @@
+<f:layout name="Default" />
+<f:section name="Main">
+    <main>
+        <h1>Hauptbereich</h1>
+
+        <f:render partial="Maintext" />
+
+        <f:for each="{mainContent}" as="contentElement">
+            <f:cObject
+                typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+                data="{contentElement.data}"
+                table="tt_content"
+            />
+        </f:for>
+    </main>
+
+    <footer>Footer</footer>
+</f:section>
