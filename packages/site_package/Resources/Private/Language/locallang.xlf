@@ -1,0 +1,3 @@
+<trans-unit id="config.no_cache" xml:space="preserve">
+    <source>Global no_cache: Check the box to turn off all caches.</source>
+</trans-unit>

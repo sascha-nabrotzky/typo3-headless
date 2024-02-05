@@ -5,3 +5,7 @@ page {
     templateRootPath = EXT:site_package/Resources/Private/Templates/Page/
   }
 }
+
+# customcategory=development=LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:config.no_cache
+#cat=development//a; type=boolean; label=Global no_cache
+config.no_cache = 0
