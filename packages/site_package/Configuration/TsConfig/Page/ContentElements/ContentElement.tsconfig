@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "common"
+  common {
+    elements {
+      site_package_newcontentelement {
+        iconIdentifier = content-text
+        title = LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:site_package_newcontentelement_title
+        description = LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:site_package_newcontentelement_description
+        tt_content_defValues {
+          CType = site_package_newcontentelement
+        }
+      }
+    }
+    show := addToList(site_package_newcontentelement)
+  }
+}
