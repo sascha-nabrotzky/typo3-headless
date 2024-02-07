@@ -11,3 +11,11 @@ page {
 # customcategory=development=LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:config.no_cache
 #cat=development//a; type=boolean; label=Global no_cache
 config.no_cache = 0
+
+# customcategory=colors=LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:colors
+#cat=colors/Color/a; type=color; label=Primary Color
+site_package.configuration.color.primary = #23a6d5
+#cat=colors/Color/b; type=color; label=Secondary Color
+site_package.configuration.color.secondary = #23a6d5
+#cat=colors/Color/c; type=color; label=Black
+site_package.configuration.color.black = #333333
