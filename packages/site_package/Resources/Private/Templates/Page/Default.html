@@ -1,4 +1,17 @@
 <f:layout name="Default" />
+
+<f:section name="Header">
+    <header>
+        <f:for each="{headerContent}" as="contentHeaderElement">
+            <f:cObject
+                typoscriptObjectPath="tt_content.{contentHeaderElement.data.CType}"
+                data="{contentHeaderElement.data}"
+                table="tt_content"
+            />
+        </f:for>
+    </header>
+</f:section>
+
 <f:section name="Main">
     <main>
         <h1>Hauptbereich</h1>
@@ -14,5 +27,7 @@
         </f:for>
     </main>
 
-    <footer>Footer</footer>
+    <f:section name="Footer">
+        <footer>Footer</footer>
+    </f:section>
 </f:section>

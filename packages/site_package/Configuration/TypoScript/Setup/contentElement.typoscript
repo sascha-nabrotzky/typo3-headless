@@ -5,6 +5,6 @@ lib.contentElement {
 tt_content {
   site_package_newcontentelement =< lib.contentElement
   site_package_newcontentelement {
-    templateName = NewContentElement
+    templateName = Default
   }
 }
