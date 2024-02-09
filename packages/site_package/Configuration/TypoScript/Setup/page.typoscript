@@ -26,7 +26,8 @@ page {
   }
 
   includeJSFooter {
-    // website = EXT:site_package/Resources/Public/JavaScript/website.js
+    jquery = EXT:site_package/Resources/Public/JavaScript/JQuery4beta.min.js
+    jqueryTest = EXT:site_package/Resources/Public/JavaScript/testJQuery.js
   }
 }
 
