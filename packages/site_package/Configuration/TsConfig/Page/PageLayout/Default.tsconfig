@@ -1,15 +1,17 @@
 mod.web_layout.BackendLayouts {
-    Default {
+    default {
         title = Default Layout
+        icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/Default.svg
         config {
             backend_layout {
-                colCount = 1
+                colCount = 3
                 rowCount = 2
                 rows {
                     1 {
                         columns {
                             1 {
-                                name = Jumbotron
+                                name = Header
+                                colspan = 3
                                 colPos = 1
                             }
                         }
@@ -17,8 +19,35 @@ mod.web_layout.BackendLayouts {
                     2 {
                         columns {
                             1 {
-                                name = Main Content
+                                name = Main
+                                colspan = 2
                                 colPos = 0
+                            }
+                            2 {
+                                name = Sidebar
+                                rowspan = 2
+                                colPos = 2
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                        1 {
+                            name = Main Left
+                            colPos = 4
+                        }
+                        2 {
+                            name = Main Right
+                            colPos = 5
+                        }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Footer
+                                colspan = 3
+                                colPos = 6
                             }
                         }
                     }

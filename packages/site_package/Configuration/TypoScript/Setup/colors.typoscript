@@ -1,0 +1,9 @@
+page.10 {
+    settings {
+        colors {
+            primary = #23a6d5
+            secondary = #23d5ab
+            black = #333333
+        }
+    }
+}

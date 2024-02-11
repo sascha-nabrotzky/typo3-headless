@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+   <file source-language="en" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="my-ext">
+      <header/>
+        <body>
+            <trans-unit id="config.no_cache" xml:space="preserve">
+                <source>Global no_cache: Check the box to turn off all caches.</source>
+            </trans-unit>
+            <trans-unit id="site_package_newcontentelement_title" xml:space="preserve">
+                <source>New content element title</source>
+            </trans-unit>
+            <trans-unit id="site_package_newcontentelement_description" xml:space="preserve">
+                <source>New content element Description</source>
+            </trans-unit>
+            <trans-unit id="colors" xml:space="preserve">
+                <source>Colors</source>
+            </trans-unit>
+        </body>
+   </file>
+</xliff>

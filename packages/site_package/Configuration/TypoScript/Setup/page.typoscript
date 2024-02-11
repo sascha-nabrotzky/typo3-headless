@@ -1,0 +1,121 @@
+// Global site configuration
+config {
+  # Adjust the title tag to be displayed as “website - page title”
+  pageTitleSeparator = -
+  pageTitleSeparator.noTrimWrap = | | |
+
+  # Display the Admin Panel at the bottom of pages to logged in backend users
+  admPanel = 1
+}
+
+page = PAGE
+page {
+  typeNum = 0
+  // 10 = TEXT
+  // 10.value = Hello World!
+
+  meta {
+    viewport = width=device-width, initial-scale=1
+    description = This is the description of the content in this document.
+    keywords = These are the keywords.
+  }
+
+  includeCSS {
+    normalizecss = EXT:site_package/Resources/Public/Css/normalize.css
+    maincss = EXT:site_package/Resources/Public/Css/main.css
+  }
+
+  includeJSFooter {
+    jquery = EXT:site_package/Resources/Public/JavaScript/JQuery4beta.min.js
+    jqueryTest = EXT:site_package/Resources/Public/JavaScript/testJQuery.js
+  }
+}
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+        key.data = pagelayout
+
+        default = TEXT
+        default.value = EXT:site_package/Resources/Private/Templates/Page/Default.html
+
+        // 3 = TEXT
+        // 3.value = EXT:site_package/Resources/Private/Templates/Page/1-col.html
+
+        // 4 = TEXT
+        // 4.value = EXT:site_package/Resources/Private/Templates/Page/2-col.html
+  }
+
+  templateRootPaths {
+    0 = EXT:site_package/Resources/Private/Templates/Page/
+    1 = {$page.fluidtemplate.templateRootPath}
+  }
+
+  partialRootPaths {
+    0 = EXT:site_package/Resources/Private/Partials/Page/
+    1 = {$page.fluidtemplate.partialRootPath}
+  }
+
+  layoutRootPaths {
+    0 = EXT:site_package/Resources/Private/Layouts/Page/
+    1 = {$page.fluidtemplate.layoutRootPath}
+  }
+
+  dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+         levels = 1
+         includeSpacer = 1
+         as = mainnavigation
+      }
+
+      20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      20 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 0
+        as = mainContent
+      }
+
+      30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      30 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 1
+        as = headerContent
+      }
+
+      40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      40 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 2
+        as = sidebarContent
+      }
+
+      50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      50 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 4
+        as = mainLeft
+      }
+
+      60 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      60 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 4
+        as = mainRight
+      }
+
+      70 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      70 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 6
+        as = footer
+      }
+    }
+}
