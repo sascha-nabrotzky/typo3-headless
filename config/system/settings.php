@@ -3,7 +3,6 @@ return [
     'BE' => [
         'debug' => true,
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$b1VxYlBFZXFISS9ZLkZTWA$cHIroYbmCL6fuNF0uQYLf4ndJKXU2qx3+bo+kWwzuEY',
-        'languageDebug' => false,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -45,8 +44,6 @@ return [
     ],
     'GFX' => [
         'processor' => 'GraphicsMagick',
-        'processor_allowTemporaryMasksAsPng' => false,
-        'processor_colorspace' => 'RGB',
         'processor_effects' => false,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
@@ -107,7 +104,6 @@ return [
         'exceptionalErrors' => 4096,
         'features' => [
             'security.backend.enforceContentSecurityPolicy' => true,
-            'security.usePasswordPolicyForFrontendUsers' => true,
         ],
         'sitename' => 'TYPO3 headless',
         'systemMaintainers' => [
