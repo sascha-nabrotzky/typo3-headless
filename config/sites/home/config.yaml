@@ -1,4 +1,4 @@
-base: 'https://typo3-headless.ddev.site/home'
+base: 'https://typo3-headless.ddev.site/'
 languages:
   -
     title: English
