@@ -21,13 +21,14 @@ page {
   }
 
   includeCSS {
-    normalizecss = EXT:site_package/Resources/Public/Css/normalize.css
-    maincss = EXT:site_package/Resources/Public/Css/main.css
+    // normalizecss = EXT:site_package/Resources/Public/Css/normalize.css
+    // maincss = EXT:site_package/Resources/Public/Css/main.css
+    outputcss = EXT:site_package/Resources/Public/Css/output.css
   }
 
   includeJSFooter {
-    jquery = EXT:site_package/Resources/Public/JavaScript/JQuery4beta.min.js
-    jqueryTest = EXT:site_package/Resources/Public/JavaScript/testJQuery.js
+    // jquery = EXT:site_package/Resources/Public/JavaScript/JQuery4beta.min.js
+    // jqueryTest = EXT:site_package/Resources/Public/JavaScript/testJQuery.js
   }
 }
 
