@@ -3,7 +3,19 @@
 ddev start 
 ddev launch typo3-headless
 
-npx tailwindcss -i ./packages/site_package/Resources/Public/Css/main.css -o ./packages/site_package/Resources/Public/Css/output.css --watch
+## Added Extensions
+
+tailwindcss
+postcss
+postcss-preset-env // autoprefixer and css nesting
+postcss-cli
+npm-run-all // for running multiple npm scripts/watchers in parallel
+
+## Scripts
+
+"tw-css": "npx tailwindcss -i ./packages/site_package/Resources/Public/Css/main.css -o ./packages/site_package/Resources/Public/Css/tw-output.css --watch",
+        "post-css": "npx postcss ./packages/site_package/Resources/Public/Css/output.css -o ./packages/site_package/Resources/Public/Css/post-output.css --watch",
+        "css-watch": "npm-run-all --parallel tw-css post-css"
 
 # TYPO3 CMS Base Distribution
 
