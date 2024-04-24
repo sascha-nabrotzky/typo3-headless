@@ -2123,11 +2123,11 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/site_package",
-                "reference": "87b31fcd722ef98a6e95edcabda46600a60a1cc0"
+                "reference": "6ccc21d5b7e161ac65bdb01984ce3eefd5b7532c"
             },
             "require": {
-                "typo3/cms-core": "^13.0.0|dev-main",
-                "typo3/cms-fluid-styled-content": "^13.0.0|dev-main"
+                "typo3/cms-core": "^13.1.0|dev-main",
+                "typo3/cms-fluid-styled-content": "^13.1.0|dev-main"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -2135,7 +2135,7 @@
                     "extension-key": "site_package"
                 },
                 "branch-alias": {
-                    "dev-master": "13.0.x-dev"
+                    "dev-master": "13.1.x-dev"
                 }
             },
             "autoload": {
