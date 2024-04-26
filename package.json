@@ -1,7 +1,7 @@
 {
     "scripts": {
         "tw-css": "npx tailwindcss -i ./packages/site_package/Resources/Public/Css/main.css -o ./packages/site_package/Resources/Public/Css/tw-output.css --watch",
-        "post-css": "npx postcss ./packages/site_package/Resources/Public/Css/output.css -o ./packages/site_package/Resources/Public/Css/post-output.css --watch",
+        "post-css": "npx postcss ./packages/site_package/Resources/Public/Css/tw-output.css -o ./packages/site_package/Resources/Public/Css/post-output.css --watch",
         "css-watch": "npm-run-all --parallel tw-css post-css"
     },
     "devDependencies": {
