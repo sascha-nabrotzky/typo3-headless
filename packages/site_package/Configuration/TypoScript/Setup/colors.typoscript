@@ -1,9 +1,10 @@
 page.10 {
     settings {
         colors {
-            primary = #23a6d5
-            secondary = #23d5ab
-            black = #333333
+            primary = {$site_package.configuration.color.primary}
+            secondary = {$site_package.configuration.color.secondary}
+            black = {$site_package.configuration.color.black}
+            white = {$site_package.configuration.color.white}
         }
     }
 }
