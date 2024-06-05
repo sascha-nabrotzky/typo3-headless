@@ -2,9 +2,10 @@ lib.contentElement {
   templateRootPaths.200 = EXT:site_package/Resources/Private/Templates/ContentElements/
 }
 
+// Register the rendering of your custom content element
 tt_content {
   site_package_newcontentelement =< lib.contentElement
   site_package_newcontentelement {
-    templateName = Default
+    templateName = ContentElement
   }
 }
